@@ -24,7 +24,9 @@
             >Web<span class="accent">Studio</span></a
           >
           <ul class="site-nav list">
-            <li class="item "><a href="./index.html" class="link current">Студія</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
@@ -361,6 +363,7 @@
         </div>
       </section>
 
+      <!-- Modal -->
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
           <button data-modal-close class="close-btn">
@@ -368,6 +371,55 @@
               <use href="./images/icons.svg#cross"></use>
             </svg>
           </button>
+          <!-- Service form -->
+          <form class="service-form">
+            <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="form-field">
+              <label for="name"> Ім'я </label>
+              <input type="text" name="name" id="name" autofocus />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label for="phone">Телефон </label>
+              <input type="tel" name="phone" id="phone" />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label for="email">Пошта</label>
+              <input type="email" name="email" id="email" />
+              <svg class="form-icon">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+              <label for="comment">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+
+            <label class="policy-label">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="policy"
+                value="agree"
+              />
+              <span class="checkbox-icon"> </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="link"> Умови договору</a>
+            </label>
+
+            <div class="form-btn-wrapper">
+              <button type="submit" class="send-button">Відправити</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
@@ -425,6 +477,17 @@
               </li>
             </ul>
           </div>
+          <form class="subscribe-form">
+            <p class="subscribe-title">Підпишіться на розсилку</p>
+            <div class="form-wrapper">
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+              <button type="submit" class="button">Підписатися
+                <svg class="send-icon">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
