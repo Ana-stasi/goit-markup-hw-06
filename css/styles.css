@@ -972,7 +972,6 @@ background-color: var(--grey-color);
     display: flex;
     align-items: center;
     cursor: pointer;
-    min-width: 200px;
     padding: 10px 28px;
     margin-left: 12px;
     border-radius: 4px;
